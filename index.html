@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Windows95</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body id="body">
+
+    <!-- Ecran de windows -->
+    <div class="screen" id="screen">
+
+      <div class="wingif" id="gif_repair_container">
+      </div>
+
+      <div class="explorer" id="explorer_div">
+        <div class="explorer_relative">
+
+        <img src="ressources/img/explorer.gif" id="explorer_gif">
+
+      </div>
+      </div>
+
+
+
+      <div class="icons">
+
+        <img src="ressources/icons/w2k_old_dustbin_2.ico" onclick="bin_click()">
+
+        <p>Corbeille</p>
+
+        <img src="ressources/icons/w2k_computer.ico">
+
+        <p>Ordinateur</p>
+
+        <img src="ressources/icons/w2k_internet_explorer.ico" onClick="explorer_click()" id="explorer_icon">
+
+        <p>Internet explrorer</p>
+
+        <img src="ressources/img/doom.png" onclick="doom_play()">
+
+        <p>DOOM</p>
+
+
+      </div>
+
+      <div class="hotbar">
+
+        <div class="start_up" onclick="w_crash()">
+
+          <img src="ressources/icons/w98_windows.ico"> <p>Démarrer</p>
+
+        </div>
+
+        <div class="time">
+
+          <img src="ressources/icons/w2k_sndrec_1.ico" onclick="sound_click()"> <p id="time">00:00</p>
+          <audio id="w95_sound" src="ressources/sound/w95_sound.mp3"></audio>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="crash_screen" id="crash_screen">
+      <div class="blue_bar">
+
+          <div class="close_cross" onclick="w_crash_close()">
+              <div class="X_div"><p>X</p></div>
+          </div>
+
+      </div>
+
+      <div class="crash_content">
+
+        <div class="warning">
+
+          <img src="ressources/icons/w2k_stop.ico" >
+
+          <p>Une ERREUR est survenu :(</p>
+
+        </div>
+
+    </div>
+
+      <div class="crash_button">
+
+        <button type="button" name="button" id="repair_button">Appeler un réparateur</button>
+
+      </div>
+
+    </div>
+
+
+    <div class="doom_screen" id="doom_screen">
+      <div class="grey_bar">
+
+          <div class="close_cross" onclick="doom_close()">
+              <div class="X_div"><p>X</p></div>
+          </div>
+
+      </div>
+
+      <div class="doom_gif">
+
+        <img src="ressources/img/doom.gif" alt="">
+        <audio id="doom_sound" src="ressources/sound/doom.mp3"></audio>
+      </div>
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>

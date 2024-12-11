@@ -1,0 +1,331 @@
+@font-face {
+  font-family: 'W95'; /* Give your font a name */
+  src: url('ressources/font/W95.ttf') format('truetype'); /* Specify the path to your font file */
+  /* You can also specify other font formats here, like woff, woff2, eot, etc., for better browser compatibility */
+}
+
+:root{
+  --grey : #C0C0C0;
+  --blue : #0000C8;
+}
+
+
+
+html{
+  height: 90%;
+  width: 99%;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+
+
+  background-color: black;
+  background-image: url('ressources/img/noise.png');
+
+  font-family: 'W95';
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.screen{
+  height: 80%;
+  width: 50%;
+
+  background-image: url('ressources/img/default_wallpaper.webp');
+
+  position: relative;
+}
+
+
+.icons{
+  height: 100%;
+  width: 10%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 65%;
+  color: white;
+
+
+}
+
+.icons img{
+  width: 50%;
+  padding-top: 10%;
+
+  cursor: pointer;
+}
+
+.icons p{
+  text-align: center;
+  width: 80%;
+}
+
+
+.hotbar{
+  height: 6%;
+  width: 100%;
+
+  background-color: var(--grey);
+
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+
+  border-top: 2px solid #ffffff; /* White top border */
+  z-index: 0;
+
+}
+
+
+.start_up{
+  height: 70%;
+  width: 10%;
+
+  position: absolute;
+  left: 3px;
+
+
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 70%;
+
+  border-top: 2px solid #ffffff; /* White top border */
+  border-left: 2px solid #ffffff; /* White left border */
+  border-bottom: 2px solid #000000; /* Black bottom border */
+  border-right: 2px solid #000000; /* Black right border */
+
+    cursor: pointer;
+
+}
+
+.start_up img{
+  width: 30%;
+}
+
+
+.time{
+
+  height: 70%;
+  width: 10%;
+
+  position: absolute;
+  right: 3px;
+
+
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-size: 65%;
+
+  border-top: 2px solid #797979; /* White top border */
+  border-left: 2px solid  #797979; /* White left border */
+  border-bottom: 2px solid #ffffff; /* Black bottom border */
+  border-right: 2px solid #ffffff; /* Black right border */
+
+}
+
+.time img{
+  width: 20%;
+      cursor: pointer;
+}
+
+
+.crash_screen{
+  height: 30%;
+  width: 30%;
+
+  background-color: var(--grey);
+
+  visibility: hidden;
+  position: fixed;
+
+  border-top: 2px solid #ffffff; /* White top border */
+  border-left: 2px solid #ffffff; /* White left border */
+  border-bottom: 2px solid #000000; /* Black bottom border */
+  border-right: 2px solid #000000; /* Black right border */
+}
+
+
+.blue_bar{
+  height: 13%;
+  width: 100%;
+
+  background-color: #0000C8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close_cross{
+  width: 4%;
+  padding-bottom:4%;
+
+  background-color: var(--grey);
+
+  border-top: 2px solid #ffffff; /* White top border */
+  border-left: 2px solid #ffffff; /* White left border */
+  border-bottom: 2px solid #000000; /* Black bottom border */
+  border-right: 2px solid #000000; /* Black right border */
+
+  position: absolute;
+  right: 3%;
+
+  cursor: pointer;
+
+
+}
+
+.X_div{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 75%;
+}
+
+.crash_content{
+  display: flex;
+  justify-content: center;
+}
+
+.warning {
+
+  display: flex;
+  justify-content: center;
+
+  width: 70%;
+  padding-top: 10%;
+}
+
+.warning img{
+  position: absolute;
+  left: 15%;
+}
+
+.crash_button{
+  height: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crash_button button{
+
+  height: 40%;
+
+  background-color: var(--grey);
+
+  border-top: 2px solid #ffffff; /* White top border */
+  border-left: 2px solid #ffffff; /* White left border */
+  border-bottom: 2px solid #000000; /* Black bottom border */
+  border-right: 2px solid #000000; /* Black right border */
+
+  box-shadow: 0 0 0 1px black;
+
+  font-family: 'W95';
+
+  cursor: pointer;
+
+}
+
+.wingif {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+
+  visibility: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  background-image: url('ressources/img/wcrash.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.doom_screen{
+  height: 30%;
+  width: 30%;
+
+  visibility: hidden;
+  position: fixed;
+
+  padding-bottom:5%;
+
+}
+
+.grey_bar{
+  height: 13%;
+  width: 100%;
+
+  background-color: var(--blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 2px solid #ffffff; /* White top border */
+  border-left: 2px solid #ffffff; /* White left border */
+  border-right: 2px solid #000000; /* Black right border */
+}
+
+.doom_gif{
+  width: 100%;
+
+}
+
+.doom_gif img{
+  width: 100%;
+  border-left: 2px solid #ffffff; /* White left border */
+  border-bottom: 2px solid #000000; /* Black bottom border */
+  border-right: 2px solid #000000; /* Black right border */
+}
+
+.explorer{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+
+}
+
+.explorer_relative{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+}
+
+.explorer_relative img{
+  width: 10%;
+  position: absolute;
+  left:0;
+}
